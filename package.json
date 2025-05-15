@@ -1,0 +1,23 @@
+{
+  "name": "webview-bun-demo",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build1": "bun build --compile --minify --sourcemap index.ts --outfile ./dist/index.app",
+    "build2": "bun build --compile --minify --sourcemap ./examples/basic.ts --outfile ./dist/basic.app",
+    "build3": "bun build --compile --minify --sourcemap ./examples/bind.ts --outfile ./dist/bind.app",
+    "build4": "bun build --compile --minify --sourcemap ./examples/multiple.ts --outfile ./dist/multiple.app",
+    "build5": "bun build --compile --minify --sourcemap ./examples/todoapp/app.ts --outfile ./dist/todoapp.app",
+    "build6": "bun build --compile --minify --sourcemap ./examples/webserver/index.ts --outfile ./dist/webserver.app"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "webview-bun": "^2.4.0"
+  }
+}
