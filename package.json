@@ -4,12 +4,13 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build1": "bun build --compile --minify --sourcemap index.ts --outfile ./dist/index.app",
-    "build2": "bun build --compile --minify --sourcemap ./examples/basic.ts --outfile ./dist/basic.app",
-    "build3": "bun build --compile --minify --sourcemap ./examples/bind.ts --outfile ./dist/bind.app",
-    "build4": "bun build --compile --minify --sourcemap ./examples/multiple.ts --outfile ./dist/multiple.app",
-    "build5": "bun build --compile --minify --sourcemap ./examples/todoapp/app.ts --outfile ./dist/todoapp.app",
-    "build6": "bun build --compile --minify --sourcemap ./examples/webserver/index.ts --outfile ./dist/webserver.app"
+    "build1": "bun build --compile --minify --sourcemap ./index.ts --outfile ./dist/index",
+    "build2": "bun build --compile --minify --sourcemap ./examples/basic.ts --outfile ./dist/basic",
+    "build3": "bun build --compile --minify --sourcemap ./examples/bind.ts --outfile ./dist/bind",
+    "build4": "bun build --compile --minify --sourcemap ./examples/multiple.ts --outfile ./dist/multiple",
+    "build5": "bun build --compile --minify --sourcemap ./examples/todoapp/app.ts --outfile ./dist/todoapp",
+    "build6": "bun build --compile --minify --sourcemap ./examples/webserver/index.ts --outfile ./dist/webserver",
+    "build:all": "bun run build1 && bun run build2 && bun run build3 && bun run build4 && bun run build5 && bun run build6"
   },
   "devDependencies": {
     "@types/bun": "latest"
