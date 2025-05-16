@@ -1,9 +1,11 @@
 # webview-bun-demo
 
+## Deployment
+
 To install dependencies:
 
 ```bash
-bun install
+bun i
 ```
 
 To run:
@@ -12,4 +14,16 @@ To run:
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.2.13. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Build
+
+To build:
+
+```zsh
+bun run build:all
+```
+
+To run the build:
+
+```zsh
+./dist/todoapp
+```
